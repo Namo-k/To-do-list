@@ -1,7 +1,7 @@
 <?php
 //connexion a la bd
     $login="root";
-    $mdp="";
+    $mdp=""; //à completer
     $serveur="localhost";
     $bd="todo";
     $connexion=mysqli_connect($serveur, $login, $mdp, $bd);
