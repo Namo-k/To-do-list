@@ -1,0 +1,319 @@
+@font-face {
+    font-family : "sunday";
+    src : url("data/police/sunday.otf");
+}
+@font-face{
+    font-family : "glacialIndifference";
+    src : url("data/police/GlacialIndifference-Regular.otf");      
+}
+@font-face {
+    font-family : "simonetta";
+    src : url("data/police/Simonetta-Regular.ttf");
+}
+:root{
+    /* Black theme */
+    --bgBT: #191A1B;
+    --greenBT: #473B08;
+    --greenBorderBT: #81A135;
+    --greenTextBT: #C3DD7E;
+    --greyBT: #424546;
+    --greyHoverBT: #262828;
+    --redBT: #7C2725;
+    --redTextBT: #EA251B;
+    /* White theme */
+    --bgWT: rgb(243, 231, 231);
+    --greenWT: #6B8E23;
+    --beigeWT: #FFF8DC;
+    --greyWT: #cbcbcb;
+    --greyHoverWT: #E9E9E9; 
+    --redWT: #971c1c;
+    /* Theme gris/beige */
+    --greyGB: #283841;
+    --greyFonceGB: #2c2d2e;
+    --greyFonceTextGB: #1c1d1f;
+    --bgGB: #41545B;
+    --bgFGB: #55666d;
+    --bordGB: rgb(191,151,123);
+    --bord2GB: #997961;
+    --textGB: rgb(235,230,220);
+    --redGB: rgb(247, 53, 53);
+
+}
+body {
+    background: rgb(128, 128, 122); 
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}
+#body{
+    background: var(--bgGB);
+    width: 665px;
+    /* height: 678px; */
+    display: block;
+    margin: 0px  auto;
+    padding: 1px 0px 10px 0px;
+    border: 1px solid var(--bgGB);
+}
+.bord{
+    width: 665px;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    background: var(--bordGB);
+    border: 1px solid var(--bordGB);
+    border-radius: 10px 10px 0px 0px;
+}
+#bord2{
+    width: 665px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    background: var(--bord2GB);
+    border: 1px solid var(--bord2GB);
+}
+.bordbas{
+    width: 665px;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    background: var(--bordGB);
+    border: 1px solid var(--bordGB);
+    border-radius: 0px 0px 10px 10px;
+}
+.heading{
+    width: 85%;
+    margin: 20px auto 30px auto;
+    color: var(--textGB);
+    background: var(--bgGB);
+    border: 2px solid  var(--bord2GB);
+    border-radius: 20px;
+    text-align: center;
+    font-family: sunday, 'Times New Roman', Times, serif;
+}
+
+form{
+    width: 85%;
+    margin: 30px auto;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--greyGB);
+    border: 1px solid var(--bord2GB);
+    display: block;
+}
+.formIndex{
+    width: 85%;
+    margin: 30px auto;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--bgFGB);
+    border: 1px solid var(--bord2GB);
+    display: block;
+}
+
+form p{
+    color: var(--redGB);
+    margin: 0px;
+    margin-bottom: 1px;
+    padding: 0px;
+}
+.taskInput{
+    width: 65%;
+    height: 15px;
+    padding: 10px;
+    border: 2px solid var(--bord2GB);
+    margin-right: 2%;
+    background: var(--bgGB);
+    color: white;
+
+}
+.addBtn{
+    width: 25%;
+    height: 39px;
+    background: var(--greyFonceGB);
+    padding: 5px 20px;
+    color: var(--textGB);
+    text-align: center;
+    float: right;
+
+    border-width: 2px;
+    border-style: ridge;
+    border-color: var(--bord2GB);
+    border-radius: 10px 10px 10px 13px;
+}
+.modBtn{
+    width: 27%;
+    height: 39px;
+    background: var(--greyFonceGB);
+    padding: 5px 20px;
+    color: var(--textGB);
+    text-align: center;
+    float: right;
+
+    border-width: 2px;
+    border-style: ridge;
+    border-color: var(--bord2GB);
+    border-radius: 10px 10px 10px 13px;
+}
+.addBtnIndex{
+    width: 40%;
+    height: 39px;
+    display: block;
+    margin: 0px auto;
+    background: var(--greyFonceGB);
+    padding: 5px 20px;
+    color: var(--textGB);
+    text-align: center;
+
+    border-width: 2px;
+    border-style: ridge;
+    border-color: var(--bord2GB);
+    border-radius: 10px 10px 10px 13px;
+}
+
+table{
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid var(--greyGB);
+}
+th{
+    color: var(--bordGB);
+    font-family: glacialIndifference, Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+
+th,td {
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+tbody>tr:hover{
+background: var(--greyHoverBT); 
+}
+td{
+color: white;
+font-family: simonetta, Arial, Helvetica, sans-serif;
+font-weight: 500;
+}
+.num{
+    text-align: center;
+}
+.task{
+    text-align: left;
+    width: 400px;
+}
+
+.btnOrdre{
+    text-align: left;
+    width: 50px;
+}
+.btnOrdre a{
+    font-size: 0.7em;
+    color: white;
+    background: var(--greyBT);
+    padding: 2px 6px 2px 6px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.delete{
+    text-align: right;
+    width: 50px;
+}
+
+.delete a{
+    color: white;
+    background: var(--redBT);
+    padding: 4px 6px 0px 6px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.modify{
+    width:20px;
+    text-align: left;
+    display: block;
+    margin:1px 0px 0px 0px;
+}
+
+.modify a{
+    font-size: 0.8em;
+    text-decoration: none;
+    background: var(--greyGB);
+    padding: 3px 3px 4px 3px;
+    border-radius: 3px;
+}
+
+.labelId{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: white;
+    margin-left: 3%;
+    padding-bottom: 5px;
+}
+
+.taskInputId{
+    width: 90%;
+    height: 15px;
+    padding: 10px;
+    border: 2px solid var(--bord2GB);
+    margin-left: 3%;
+    margin-top: 5px;
+    background: var(--bgGB);
+    color: white;
+}
+
+/* _____Menu____ */
+
+.action{
+    margin:1px 0px 0px 10px;
+}
+.menu{
+    position: relative;
+    width: 26px;
+    height: 26px;
+    background: var(--greyGB);
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.6s; 
+}
+.menu.clicked{
+    width: 26px;
+    height: 26px;
+    transition-delay: 0s;
+}
+.menu span{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(calc(2+10px * var(--x)*2),calc(2+10px * var(--y)));
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+    background: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+.menu.clicked span{
+    width: 45px;
+    height: 45px;
+    background: #333849;
+    transform: translate(calc(40px*var(--x)),calc(30px * var(--y)));
+}
+.menu span ion-icon{
+    transition: 0.5s;
+    font-size: 0em;
+}
+.menu.clicked span ion-icon{
+    font-size: 1em;
+    color: #fff;
+}
+.menu.clicked span:hover ion-icon{
+    color: #2dfc52;
+    filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 15px #2dfc52);
+}
