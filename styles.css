@@ -1,3 +1,4 @@
+/* styles.css */ /*to-do-list*/
 @font-face {
     font-family : "sunday";
     src : url("data/police/sunday.otf");
@@ -10,7 +11,7 @@
     font-family : "simonetta";
     src : url("data/police/Simonetta-Regular.ttf");
 }
-:root{
+:root
     /* Black theme */
     --bgBT: #191A1B;
     --greenBT: #473B08;
